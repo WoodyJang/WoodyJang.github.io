@@ -4215,15 +4215,15 @@ pre .link_url {
   position: relative;
 }
 .switch-btn .tips-box .tips-arrow {
-  width: 0;
-  height: 0;
+  width: 80px;
+  height: 10px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 6px solid #000;
   opacity: 0.8;
   position: absolute;
-  top: -6px;
-  left: 30px;
+  top: -12px;
+  left: 9px;
 }
 .switch-btn .tips-box .tips-inner {
   padding: 5px 8px 4px 8px;
@@ -4244,6 +4244,16 @@ pre .link_url {
 }
 .switch-btn .tips-box .tips-inner li:hover {
   background: #4d4d4d;
+}
+.switch-btn .tips-box .tips-inner:after {
+  width: 0px;
+  height: 0px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 6px solid #000;
+  position: absolute;
+  top: -12px;
+  left: 9px;
 }
 .switch-btn .icon {
   height: 32px;

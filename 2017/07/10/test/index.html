@@ -57,7 +57,7 @@
     <header id="header" class="inner">
         <a href="/" class="profilepic">
             
-            <img lazy-src="/img/head.jpg" class="js-avatar">
+            <img lazy-src="/img/logo.jpg" class="js-avatar">
             
         </a>
 
@@ -88,10 +88,11 @@
                         </div>
                         
                     </div>
-                    
+
                 </div>
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
+                    <div class="tips-arrow1"></div>
                     <ul class="tips-inner">
                         <li>菜单</li>
                         <li>标签</li>
@@ -119,24 +120,20 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fl mail" target="_blank" href="/" title="mail">mail</a>
+                                <a class="fl mail" target="_blank" href="mailto:woodyjang@126.com" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/WoodyJang" title="github">github</a>
                             
-                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-wu-78-72/activities" title="zhihu">zhihu</a>
                             
-                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/u/2145995150?is_all=1" title="weibo">weibo</a>
                             
-                                <a class="fl google" target="_blank" href="#" title="google">google</a>
-                            
-                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
-                            
-                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                                <a class="fl douban" target="_blank" href="https://www.douban.com/people/143380594/" title="douban">douban</a>
                             
                         </ul>
                     </nav>
                 </section>
-                
+
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
@@ -144,7 +141,7 @@
                     </div>
                 </section>
                 
-                
+
                 
 
                 
@@ -156,7 +153,7 @@
                 
             </div>
         </div>
-    </header>                
+    </header>
 </div>
     </div>
     <div class="mid-col">
@@ -169,7 +166,7 @@
         <header id="header" class="inner">
             <a href="/" class="profilepic">
                 
-                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                    <img lazy-src="/img/logo.jpg" class="js-avatar">
                 
             </a>
             <hgroup>
@@ -191,19 +188,15 @@
             <nav class="header-nav">
                 <div class="social">
                     
-                        <a class="mail" target="_blank" href="/" title="mail">mail</a>
+                        <a class="mail" target="_blank" href="mailto:woodyjang@126.com" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/WoodyJang" title="github">github</a>
                     
-                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/zhang-wu-78-72/activities" title="zhihu">zhihu</a>
                     
-                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+                        <a class="weibo" target="_blank" href="http://weibo.com/u/2145995150?is_all=1" title="weibo">weibo</a>
                     
-                        <a class="google" target="_blank" href="#" title="google">google</a>
-                    
-                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
-                    
-                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
+                        <a class="douban" target="_blank" href="https://www.douban.com/people/143380594/" title="douban">douban</a>
                     
                 </div>
             </nav>
@@ -256,6 +249,52 @@
 <p>testtesttesttesttesttesttest</p>
 
       
+      
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipay.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.jpg" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/wechat.jpg" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+".jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
     </div>
     
@@ -339,32 +378,11 @@
 	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
 	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
 	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
-	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
-	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
-	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
 	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
 </div>
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
-
-
-    
-        <div id="gitments"></div>
-<script src="/js/gitment.browser.js"></script>
-<script>
-    var gitment = new Gitment({
-      id: window.location.pathname,
-      owner: 'woodyjang',
-      repo: 'woodyjang.github.io',
-      oauth: {
-        client_id: 'null',
-        client_secret: 'null',
-      },
-    })
-    gitment.render('gitments')
-</script>
-    
 
 
 
