@@ -583,7 +583,6 @@ a {
     margin-right: 3px;
   }
   #container .bdshare-button-style2-24 {
-    width: 289px;
     margin: auto;
   }
   #container .bdshare-button-style2-24 .fx {
@@ -4028,8 +4027,12 @@ pre .link_url {
 .footer-right {
   float: right;
 }
+#busuanzi_container_site_pv,
+#busuanzi_container_page_pv {
+  position: relative;
+}
 .bdshare-button-style2-24 {
-  width: 330px;
+  width: 175px;
   margin: 12px auto;
 }
 .bdshare-button-style2-24 .fx {
@@ -4042,6 +4045,7 @@ pre .link_url {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 30px;
 }
 .bdshare-button-style2-24 .fx:hover {
   color: #fff;
@@ -4215,15 +4219,24 @@ pre .link_url {
   position: relative;
 }
 .switch-btn .tips-box .tips-arrow {
-  width: 80px;
-  height: 10px;
+  width: 96px;
+  height: 13px;
+  opacity: 0.8;
+  position: absolute;
+  top: -12px;
+  left: -13px;
+  background: inherit;
+}
+.switch-btn .tips-box .tips-arrow1 {
+  width: 0px;
+  height: 0px;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 6px solid #000;
   opacity: 0.8;
   position: absolute;
   top: -12px;
-  left: 9px;
+  left: 31px;
 }
 .switch-btn .tips-box .tips-inner {
   padding: 5px 8px 4px 8px;
@@ -4235,6 +4248,7 @@ pre .link_url {
   position: absolute;
   z-index: 99;
   left: -13px;
+  top: -5px;
 }
 .switch-btn .tips-box .tips-inner li {
   padding: 8px 0;
@@ -4245,7 +4259,7 @@ pre .link_url {
 .switch-btn .tips-box .tips-inner li:hover {
   background: #4d4d4d;
 }
-.switch-btn .tips-box .tips-inner:after {
+.switch-btn .tips-box .tips-arrow::after {
   width: 0px;
   height: 0px;
   border-left: 5px solid transparent;
