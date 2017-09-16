@@ -1,0 +1,37 @@
+.links-of-author { margin-top: 20px; }
+
+.links-of-author a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-bottom-color: $black-light;
+  font-size: 13px;
+
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    border-radius: 50%;
+    font-size: 0;
+    -webkit-transition: opacity 0.3s ease;
+    &.mail{
+      background: url("/images/mail.png") center no-repeat #3b98ba;
+      border: 1px solid #3b98ba;
+    }
+    &.github{
+      background: url("/images/github.png") center no-repeat #000;
+      border: 1px solid #000;
+    }
+    &.weibo{
+      background: url("/images/weibo.png") center no-repeat #f00;
+      border: 1px solid #f00;
+    }
+    &.zhihu{
+      background: url("/images/zhihu.png") center no-repeat #0663c1;
+      border: 1px solid #0663c1;
+    }
+    &.douban{
+      background: url("/images/douban.png") center no-repeat #06c611;
+      border: 1px solid #06c611;
+    }
+}
