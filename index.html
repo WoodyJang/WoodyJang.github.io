@@ -381,18 +381,18 @@
 
       
         
-          
-            <h5 id="mvvm软件架构模式是由Model-View-ViewModel组成。"><a href="#mvvm软件架构模式是由Model-View-ViewModel组成。" class="headerlink" title="mvvm软件架构模式是由Model-View-ViewModel组成。"></a>mvvm软件架构模式是由Model-View-ViewModel组成。</h5><p><img src="/img/mvvm.png" alt="“图片描述”"></p>
+          <h5 id="mvvm软件架构模式是由Model-View-ViewModel组成。"><a href="#mvvm软件架构模式是由Model-View-ViewModel组成。" class="headerlink" title="mvvm软件架构模式是由Model-View-ViewModel组成。"></a>mvvm软件架构模式是由Model-View-ViewModel组成。</h5><p><img src="/img/mvvm.png" alt="“图片描述”"></p>
 <ol>
 <li>View 故名思议就是视图层，主要负责界面和数据的展示</li>
 <li>Model 也就是数据层，主要是后端与数据库进行的相关交互所返回的数据，对我们前端而言，也就是我们通常通过api所获取到的数据。</li>
 </ol>
-<h5 id="mvvm原理以及各个部分的分工"><a href="#mvvm原理以及各个部分的分工" class="headerlink" title="mvvm原理以及各个部分的分工"></a>mvvm原理以及各个部分的分工</h5><p><img src="/img/mvv2.png" alt="“图片描述”"></p>
-<ol>
-<li>ViewModel 是视图数据层，也是MVVM模式中的核心。ViewModel主要包含两个方面，视图的行为和视图的状态。通常我们通过api所获取到的数据，一般是视图的状态，举个栗子，比如一个2个tab页，我们需要tab也展示第二个tab页的内容（默认一般显示第一个），但是我们通过api接口所获取到的数据，只有第二个tab页的数据，并没有包含展示第二个tab页的行为描述。也就是说我们能拿到数据，但是页面并不会像我们想象的一样去直接显示第二个tab页。这个时候ViewModel核心作用就来了，我们让Model与ViewModel进行交互，通过ViewModel对数据进行再封装，将数据以及行为都封装在ViewModel中,然后通过ViewModel去控制View层的界面行为和数据展示。同时由于MVVM实现了双向数据绑定，ViewModel的内容的更改会直接展现在View层，不需要我们再去获取DOM元素去更新视图，MVVM框架已经把最脏最累的一块做好了，我们开发者只需要处理和维护ViewModel，更新数据视图就会自动得到相应更新，真正实现数据驱动开发。这样就完全解耦了View和Model层，使前后端分离成为了可能。</li>
-</ol>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/06/06/谈谈对MVVM的理解/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -488,18 +488,7 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vue2/" itemprop="url" rel="index">
-                    <span itemprop="name">vue2</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vue2/移动端/" itemprop="url" rel="index">
+                  <a href="/categories/移动端/" itemprop="url" rel="index">
                     <span itemprop="name">移动端</span>
                   </a>
                 </span>
@@ -553,16 +542,6 @@
 <li>js中 通过window.devicePixelRatio获取当前设备的dpr，</li>
 <li>css中 通过-webkit-device-pixel-ratio,-webkit-min-device-pixel-ratio和-webkit-max-device-pixel-ratio进行媒体查询，做一些样式适配。</li>
 </ul>
-</li>
-<li><p>设备独立像素（dip/dp）</p>
-<blockquote>
-<p>device independent<br>  pixels，设备独立像素，与屏幕密度有关。dip可以用来辅助区分视网膜屏（retina）和非视网膜屏</p>
-</blockquote>
-</li>
-<li><p>屏幕像素密度（PPI）</p>
-<blockquote>
-<p>屏幕像素密度 = 对角线分辨率 / 屏幕尺寸 ，屏幕尺寸是屏幕对角线的长度</p>
-</blockquote>
 </li>
 </ul>
           <!--noindex-->
@@ -654,6 +633,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/react/" itemprop="url" rel="index">
+                    <span itemprop="name">react</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -805,7 +806,12 @@
 
       
         
-          <h6 id="最近用git提交代码比较多，因此这里记录一下常用命令。"><a href="#最近用git提交代码比较多，因此这里记录一下常用命令。" class="headerlink" title="最近用git提交代码比较多，因此这里记录一下常用命令。"></a>最近用git提交代码比较多，因此这里记录一下常用命令。</h6>
+          <h6 id="最近用git提交代码比较多，因此这里记录一下常用命令。"><a href="#最近用git提交代码比较多，因此这里记录一下常用命令。" class="headerlink" title="最近用git提交代码比较多，因此这里记录一下常用命令。"></a>最近用git提交代码比较多，因此这里记录一下常用命令。</h6><h4 id="git-常用命令"><a href="#git-常用命令" class="headerlink" title="git 常用命令"></a>git 常用命令</h4><h5 id="1、设置Git的user-name和email，查看公钥，生成公钥"><a href="#1、设置Git的user-name和email，查看公钥，生成公钥" class="headerlink" title="1、设置Git的user name和email，查看公钥，生成公钥"></a>1、设置Git的user name和email，查看公钥，生成公钥</h5><blockquote>
+<p>git config –global user.name “test”</p>
+<p>git config –global user.email “test@a.com”</p>
+<p>cd ~/.ssh</p>
+<p>ssh-keygen -t rsa -C “test@a.com”</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2017/09/30/git常用命令/#more" rel="contents">
@@ -908,8 +914,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vue2-0/" itemprop="url" rel="index">
-                    <span itemprop="name">vue2.0</span>
+                  <a href="/categories/vue2/" itemprop="url" rel="index">
+                    <span itemprop="name">vue2</span>
                   </a>
                 </span>
 
@@ -946,6 +952,18 @@
           <p>#一个使用 Vue2.0 仿豆瓣电影的项目</p>
 <blockquote>
 <p>github地址: <a href="https://github.com/WoodyJang/vue_movie" target="_blank" rel="external">https://github.com/WoodyJang/vue_movie</a></p>
+</blockquote>
+<p>克隆项目到本地</p>
+<blockquote>
+<p>git clone <a href="https://github.com/WoodyJang/vue_movie.git" target="_blank" rel="external">https://github.com/WoodyJang/vue_movie.git</a></p>
+</blockquote>
+<p>安装依赖</p>
+<blockquote>
+<p>npm install</p>
+</blockquote>
+<p>在 localhost:8080 启动项目</p>
+<blockquote>
+<p>npm run dev</p>
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
@@ -1049,19 +1067,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vue/" itemprop="url" rel="index">
-                    <span itemprop="name">vue</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/vue/react/" itemprop="url" rel="index">
-                    <span itemprop="name">react</span>
+                  <a href="/categories/vue2/" itemprop="url" rel="index">
+                    <span itemprop="name">vue2</span>
                   </a>
                 </span>
 
@@ -1098,6 +1105,17 @@
           <h3 id="vue"><a href="#vue" class="headerlink" title="vue"></a>vue</h3><ol>
 <li><h5 id="安装vue环境"><a href="#安装vue环境" class="headerlink" title="安装vue环境"></a>安装vue环境</h5><blockquote>
 <h5 id="npm-install-g-vue-cli"><a href="#npm-install-g-vue-cli" class="headerlink" title="npm install -g vue-cli"></a>npm install -g vue-cli</h5></blockquote>
+</li>
+</ol>
+<ol>
+<li><h5 id="新建命令"><a href="#新建命令" class="headerlink" title="新建命令"></a>新建命令</h5><blockquote>
+<h5 id="vue-init-webpack-projectName"><a href="#vue-init-webpack-projectName" class="headerlink" title="vue init webpack projectName"></a>vue init webpack projectName</h5></blockquote>
+</li>
+<li><h5 id="下载依赖"><a href="#下载依赖" class="headerlink" title="下载依赖"></a>下载依赖</h5><blockquote>
+<h5 id="cd-projectName"><a href="#cd-projectName" class="headerlink" title="cd  projectName"></a>cd  projectName</h5><h5 id="npm-install"><a href="#npm-install" class="headerlink" title="npm install"></a>npm install</h5></blockquote>
+</li>
+<li><h5 id="运行项目"><a href="#运行项目" class="headerlink" title="运行项目"></a>运行项目</h5><blockquote>
+<h5 id="npm-run-dev"><a href="#npm-run-dev" class="headerlink" title="npm run dev"></a>npm run dev</h5></blockquote>
 </li>
 </ol>
           <!--noindex-->
@@ -1196,7 +1214,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1207,7 +1225,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
