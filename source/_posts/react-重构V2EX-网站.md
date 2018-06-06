@@ -1,7 +1,8 @@
 ---
 title: react 重构V2EX 网站
 date: 2017-12-13 10:41:43
-tags:
+tags: [react]
+categories: [react]
 ---
 
 ## 技术框架

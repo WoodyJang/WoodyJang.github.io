@@ -1,14 +1,15 @@
 ---
 title: vue、react基础命令
-categories: [vue,react]
-tags: [vue,react]
+date: 2017-05-24 20:36:07
+categories: [vue2]
+tags: [vue2,react]
 ---
 
 ### vue
 1. ##### 安装vue环境
 > ##### npm install -g vue-cli
 
-<!-- more -->
+
 
 2. ##### 新建命令 
 > ##### vue init webpack projectName
@@ -20,7 +21,7 @@ tags: [vue,react]
 4. ##### 运行项目 
 > ##### npm run dev
 
-
+<!-- more -->
 
 ### react
 1. ##### 安装react环境

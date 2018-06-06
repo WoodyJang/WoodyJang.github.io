@@ -1,8 +1,8 @@
 ---
 title: 移动端web页面开发适配方案
-date: 2018-05-23 20:36:07
-categories: [vue2,移动端]
-tags: [vue2,移动端]
+date: 2018-05-24 20:36:07
+categories:  [移动端]
+tags: [移动端]
 ---
 
 
@@ -22,6 +22,8 @@ tags: [vue2,移动端]
     - js中 通过window.devicePixelRatio获取当前设备的dpr，
     - css中 通过-webkit-device-pixel-ratio,-webkit-min-device-pixel-ratio和-webkit-max-device-pixel-ratio进行媒体查询，做一些样式适配。
 
+<!-- more -->
+
 - 设备独立像素（dip/dp）
     > device independent
     pixels，设备独立像素，与屏幕密度有关。dip可以用来辅助区分视网膜屏（retina）和非视网膜屏
@@ -29,7 +31,7 @@ tags: [vue2,移动端]
 - 屏幕像素密度（PPI）
     > 屏幕像素密度 = 对角线分辨率 / 屏幕尺寸 ，屏幕尺寸是屏幕对角线的长度
 
-<!-- more -->
+
 
 - viewport
 
