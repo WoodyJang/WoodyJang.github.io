@@ -95,7 +95,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vue2,MVVM," />
 
 
 
@@ -111,13 +111,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="wzhang&#39;s blog">
-<meta property="og:url" content="https://woodyjang.github.io/archives/2017/05/index.html">
+<meta name="description" content="mvvm软件架构模式是由Model-View-ViewModel组成。  View 故名思议就是视图层，主要负责界面和数据的展示 Model 也就是数据层，主要是后端与数据库进行的相关交互所返回的数据，对我们前端而言，也就是我们通常通过api所获取到的数据。  mvvm原理以及各个部分的分工  ViewModel 是视图数据层，也是MVVM模式中的核心。ViewModel主要包含两个方面，视图的行">
+<meta name="keywords" content="vue2,MVVM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="谈谈对MVVM的理解">
+<meta property="og:url" content="https://woodyjang.github.io/2018/06/06/谈谈对MVVM的理解/index.html">
 <meta property="og:site_name" content="wzhang&#39;s blog">
+<meta property="og:description" content="mvvm软件架构模式是由Model-View-ViewModel组成。  View 故名思议就是视图层，主要负责界面和数据的展示 Model 也就是数据层，主要是后端与数据库进行的相关交互所返回的数据，对我们前端而言，也就是我们通常通过api所获取到的数据。  mvvm原理以及各个部分的分工  ViewModel 是视图数据层，也是MVVM模式中的核心。ViewModel主要包含两个方面，视图的行">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://woodyjang.github.io/img/mvvm.png">
+<meta property="og:image" content="https://woodyjang.github.io/img/mvv2.png">
+<meta property="og:updated_time" content="2018-06-06T07:24:20.399Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="wzhang&#39;s blog">
+<meta name="twitter:title" content="谈谈对MVVM的理解">
+<meta name="twitter:description" content="mvvm软件架构模式是由Model-View-ViewModel组成。  View 故名思议就是视图层，主要负责界面和数据的展示 Model 也就是数据层，主要是后端与数据库进行的相关交互所返回的数据，对我们前端而言，也就是我们通常通过api所获取到的数据。  mvvm原理以及各个部分的分工  ViewModel 是视图数据层，也是MVVM模式中的核心。ViewModel主要包含两个方面，视图的行">
+<meta name="twitter:image" content="https://woodyjang.github.io/img/mvvm.png">
 
 
 
@@ -145,13 +153,13 @@
 
 
 
-  <link rel="canonical" href="https://woodyjang.github.io/archives/2017/05/"/>
+  <link rel="canonical" href="https://woodyjang.github.io/2018/06/06/谈谈对MVVM的理解/"/>
 
 
 
 
 
-  <title>归档 | wzhang's blog</title>
+  <title>谈谈对MVVM的理解 | wzhang's blog</title>
   
 
 
@@ -176,7 +184,7 @@
     
   
 
-  <div class="container sidebar-position-right  page-archive  ">
+  <div class="container sidebar-position-right page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,66 +288,180 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 6 篇日志。 继续努力。
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://woodyjang.github.io/2018/06/06/谈谈对MVVM的理解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wzhang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/head.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wzhang's blog">
     </span>
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">谈谈对MVVM的理解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-06T15:18:53+08:00">
+                2018-06-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/vue2/" itemprop="url" rel="index">
+                    <span itemprop="name">vue2</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
 
       
       
-      
 
+      
+        <h5 id="mvvm软件架构模式是由Model-View-ViewModel组成。"><a href="#mvvm软件架构模式是由Model-View-ViewModel组成。" class="headerlink" title="mvvm软件架构模式是由Model-View-ViewModel组成。"></a>mvvm软件架构模式是由Model-View-ViewModel组成。</h5><p><img src="/img/mvvm.png" alt="“图片描述”"></p>
+<ol>
+<li>View 故名思议就是视图层，主要负责界面和数据的展示</li>
+<li>Model 也就是数据层，主要是后端与数据库进行的相关交互所返回的数据，对我们前端而言，也就是我们通常通过api所获取到的数据。</li>
+</ol>
+<h5 id="mvvm原理以及各个部分的分工"><a href="#mvvm原理以及各个部分的分工" class="headerlink" title="mvvm原理以及各个部分的分工"></a>mvvm原理以及各个部分的分工</h5><p><img src="/img/mvv2.png" alt="“图片描述”"></p>
+<ol>
+<li>ViewModel 是视图数据层，也是MVVM模式中的核心。ViewModel主要包含两个方面，视图的行为和视图的状态。通常我们通过api所获取到的数据，一般是视图的状态，举个栗子，比如一个2个tab页，我们需要tab也展示第二个tab页的内容（默认一般显示第一个），但是我们通过api接口所获取到的数据，只有第二个tab页的数据，并没有包含展示第二个tab页的行为描述。也就是说我们能拿到数据，但是页面并不会像我们想象的一样去直接显示第二个tab页。这个时候ViewModel核心作用就来了，我们让Model与ViewModel进行交互，通过ViewModel对数据进行再封装，将数据以及行为都封装在ViewModel中,然后通过ViewModel去控制View层的界面行为和数据展示。同时由于MVVM实现了双向数据绑定，ViewModel的内容的更改会直接展现在View层，不需要我们再去获取DOM元素去更新视图，MVVM框架已经把最脏最累的一块做好了，我们开发者只需要处理和维护ViewModel，更新数据视图就会自动得到相应更新，真正实现数据驱动开发。这样就完全解耦了View和Model层，使前后端分离成为了可能。</li>
+</ol>
+
+      
+    </div>
+
+    <div>
       
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/vue2/" rel="tag"># vue2</a>
+          
+            <a href="/tags/MVVM/" rel="tag"># MVVM</a>
+          
         </div>
       
+
+      
+      
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/05/24/移动端web页面开发适方案/" rel="next" title="移动端web页面开发适配方案">
+                <i class="fa fa-chevron-left"></i> 移动端web页面开发适配方案
+              </a>
+            
+          </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          <span class="post-nav-divider"></span>
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/24/vue、react基础命令/" itemprop="url">
-              
-                <span itemprop="name">vue、react基础命令</span>
-              
-            </a>
-        
-      </h2>
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-24T20:36:07+08:00"
-              content="2017-05-24" >
-          05-24
-        </time>
-      </div>
-
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
-  </section>
-
-  
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -347,6 +469,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -367,8 +493,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/head.jpg"
@@ -462,6 +597,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#mvvm软件架构模式是由Model-View-ViewModel组成。"><span class="nav-number">1.</span> <span class="nav-text">mvvm软件架构模式是由Model-View-ViewModel组成。</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#mvvm原理以及各个部分的分工"><span class="nav-number">2.</span> <span class="nav-text">mvvm原理以及各个部分的分工</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -563,11 +714,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
