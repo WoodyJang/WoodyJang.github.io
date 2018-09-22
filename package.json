@@ -1,0 +1,25 @@
+{
+  "name": "woodyjang.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "bash deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WoodyJang/woodyjang.github.io.git"
+  },
+  "author": "zhangwu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WoodyJang/woodyjang.github.io/issues"
+  },
+  "homepage": "https://github.com/WoodyJang/woodyjang.github.io#readme"
+}
