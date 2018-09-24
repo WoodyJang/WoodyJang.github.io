@@ -1,7 +1,7 @@
 let path = "/study/";
 let sidebar = [
   {
-    title: "后端",
+    title: "学习",
     collapsable: false,
     children: [
       "git",

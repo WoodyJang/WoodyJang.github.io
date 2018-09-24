@@ -1,10 +1,10 @@
 let path = "/technical/";
 let sidebar = [
   {
-    title: "后端",
+    title: "技术博客",
     collapsable: false,
     children: [
-      "",
+      // "",
       "web",
       "MVVM"
     ]
