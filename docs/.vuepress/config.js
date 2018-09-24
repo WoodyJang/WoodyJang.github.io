@@ -1,3 +1,4 @@
+const sidebar = require("./sidebar");
 module.exports = {
   title: "Ivan",
   description: "记录生活，记录成长",
@@ -16,10 +17,11 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "技术博客", link: "/technical/" },
-      { text: "个人文章", link: "/article/" },
-      { text: "学习", link: "/study/" }
+      { text: "学习", link: "/study/" },
+      { text: "个人文章", link: "/article/" }
     ],
-
+    sidebar,
+    sidebarDepth: 2,
     //搜索
     search: true,
     searchMaxSuggestions: 10,
