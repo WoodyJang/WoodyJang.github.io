@@ -2,6 +2,7 @@
 # git 常用命令
 ##  1、设置Git的user name和email，查看公钥，生成公钥
 
+```javascript
 > git config --global user.name "test"
 
 > git config --global user.email "test@a.com"
@@ -9,10 +10,10 @@
 > cd ~/.ssh
 
 > ssh-keygen -t rsa -C "test@a.com"
-
+```
 
 ##  2、克隆代码，拉取更新，添加，提交，推送，拉取更新，切换分支，合并分支
-
+```javascript
 > git clone 【url】 //克隆指定url地址的代码到本地
 
 > git clone -b 【分支名】 【url】//克隆指定分支下的代码
@@ -46,7 +47,7 @@
 > git status //查看代码提交的情况
 
 > git merge origin/otherbranch //将其他分支合并到当前分支
-
+```
 ##### pull=fetch+merge,一般只需使用pull即可
 
 参考文档: https://segmentfault.com/a/1190000002442065

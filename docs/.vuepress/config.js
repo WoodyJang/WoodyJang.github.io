@@ -26,6 +26,6 @@ module.exports = {
     //搜索
     search: true,
     searchMaxSuggestions: 10,
-    lastUpdated: "Last Updated" // string | boolean
+    // lastUpdated: "Last Updated" // string | boolean
   }
 };

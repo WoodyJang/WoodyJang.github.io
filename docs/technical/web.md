@@ -30,7 +30,7 @@
 
     > 标准设置
     
-    ```
+    ```javascript
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     ```
     > viewport 是严格的等于浏览器的窗口大小，\
@@ -53,45 +53,45 @@
     > 根据屏幕的分辨率动态的设置html的文字大小，以及scale的值，达到等比缩放的功能。
     
     这里我们提取了一个公式
-    
+    ```javascript
         rem = document.documentElement.clientWidth * dpr / 10
+    ```
     > 1.乘以dpr，是因为页面有可能为了实现1px border页面会缩放(scale) 1/dpr 倍(如果没有，dpr=1)\
     > 2.除以10，是为了取整，方便计算
     
     
-    
-           <script>
-            var dpr, rem, scale;
-            var docEl = document.documentElement;
-            var fontEl = document.createElement('style');
-            var metaEl = document.querySelector('meta[name="viewport"]');
-            dpr = window.devicePixelRatio || 1;
-            rem = docEl.clientWidth * dpr / 10;
-            scale = 1 / dpr;
-            // 设置viewport，进行缩放，达到高清效果
-            metaEl.setAttribute('content', 'width=' + dpr * docEl.clientWidth + ',initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
-            // 设置data-dpr属性，留作的css hack之用
-            docEl.setAttribute('data-dpr', dpr);
-            // 动态写入样式
-            docEl.firstElementChild.appendChild(fontEl);
-            fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
-            // 给js调用的，某一dpr下rem和px之间的转换函数
-            window.rem2px = function(v) {
-                v = parseFloat(v);
-                return v * rem;
-            };
-            window.px2rem = function(v) {
-                v = parseFloat(v);
-                return v / rem;
-            };
-            window.dpr = dpr;
-            window.rem = rem;
-    </script>
-    
+    ```javascript
+    var dpr, rem, scale;
+    var docEl = document.documentElement;
+    var fontEl = document.createElement('style');
+    var metaEl = document.querySelector('meta[name="viewport"]');
+    dpr = window.devicePixelRatio || 1;
+    rem = docEl.clientWidth * dpr / 10;
+    scale = 1 / dpr;
+    // 设置viewport，进行缩放，达到高清效果
+    metaEl.setAttribute('content', 'width=' + dpr * docEl.clientWidth + ',initial-scale=' + scale + ',maximum-scale=' + scale + ', minimum-scale=' + scale + ',user-scalable=no');
+    // 设置data-dpr属性，留作的css hack之用
+    docEl.setAttribute('data-dpr', dpr);
+    // 动态写入样式
+    docEl.firstElementChild.appendChild(fontEl);
+    fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+    // 给js调用的，某一dpr下rem和px之间的转换函数
+    window.rem2px = function(v) {
+        v = parseFloat(v);
+        return v * rem;
+    };
+    window.px2rem = function(v) {
+        v = parseFloat(v);
+        return v / rem;
+    };
+    window.dpr = dpr;
+    window.rem = rem;
+    ```
 - css 
     
     使用less或sass的mixin定义：
-
-        .px2rem(@name, @px){
-            @{name}: @px / 75 * 1rem;
-        }
+    ```javascript
+    .px2rem(@name, @px){
+        @{name}: @px / 75 * 1rem;
+    }
+    ```
