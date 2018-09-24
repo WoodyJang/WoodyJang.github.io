@@ -5,8 +5,8 @@ let sidebar = [
     collapsable: false,
     children: [
       "",
-      "移动端web页面开发适方案",
-      "谈谈对MVVM的理解"
+      "web",
+      "MVVM"
     ]
   }
 ];

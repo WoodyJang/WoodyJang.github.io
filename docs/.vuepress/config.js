@@ -11,6 +11,7 @@ module.exports = {
     //gitc 仓库地址
     repo: "WoodyJang/WoodyJang.github.io",
     docsDir: "docs",
+    docsBranch: "vuepress",
     editLinks: true,
     editLinkText: "在github上编辑本页",
     //导航栏
