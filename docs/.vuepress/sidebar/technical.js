@@ -6,7 +6,8 @@ let sidebar = [
     children: [
       // "",
       "web",
-      "MVVM"
+      "MVVM",
+      "javaScript"
     ]
   }
 ];
