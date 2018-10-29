@@ -1,7 +1,7 @@
 const sidebar = require("./sidebar");
 module.exports = {
   title: "Ivan",
-  description: "记录生活，记录成长",
+  description: "记录",
   base: "/",
   host: "0.0.0.0",
   //mac下port未生效
